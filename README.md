@@ -177,7 +177,7 @@ Teams are initially ordered by their official Global VRS rank from the specified
 
 | Detail | Method |
 | --- | --- |
-| VRS publication used for initial seeding | Official October 2026 Global VRS invitation publication. Exact snapshot date and link pending publication. |
+| VRS publication used for initial seeding | Official Global VRS invitation publication dated October 5, 2026. |
 | Ordering unranked teams and resolving seed ties | 1. HLTV World Ranking points, highest first. 2. Random seeding for remaining ties. These criteria do not override distinct ranks in the official VRS order. |
 | HLTV ranking snapshot | The latest HLTV World Ranking available on October 22, 2026. Treatment of teams without HLTV ranking points is pending confirmation. |
 | Group allocation | Snake seeding using the final seed order: A, B, B, A for two groups, or A, B, C, D, D, C, B, A for four groups. The sequence repeats until all teams are placed; group sizes differ by at most one. |
