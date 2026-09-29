@@ -178,8 +178,8 @@ Teams are initially ordered by their official Global VRS rank from the specified
 | Detail | Method |
 | --- | --- |
 | VRS publication used for initial seeding | Official Global VRS invitation publication dated October 5, 2026. |
-| Ordering unranked teams and resolving seed ties | 1. HLTV World Ranking points, highest first. 2. Random seeding for remaining ties. These criteria do not override distinct ranks in the official VRS order. |
-| HLTV ranking snapshot | The latest HLTV World Ranking available on October 22, 2026. Treatment of teams without HLTV ranking points is pending confirmation. |
+| Ordering unranked teams and resolving seed ties | 1. HLTV World Ranking points, highest first. 2. Random seeding for remaining ties. Among teams without a Global VRS rank, those without HLTV ranking points are seeded randomly below those with points. These criteria do not override distinct ranks in the official VRS order. |
+| HLTV ranking snapshot | The latest HLTV World Ranking available on October 22, 2026. |
 | Group allocation | Snake seeding using the final seed order: A, B, B, A for two groups, or A, B, C, D, D, C, B, A for four groups. The sequence repeats until all teams are placed; group sizes differ by at most one. |
 | Group standings | Three points for a series win and zero points for a series loss. |
 | Group tiebreakers | Applied in order: 1. Head-to-head results between the tied teams. 2. Round differential in matches between the tied teams. 3. Overall group round differential. |
@@ -215,7 +215,7 @@ The third-place match determines the separate third- and fourth-place prizes.
 | --- | --- |
 | Prize payment | Prize money is paid through the Challengermode tournament platform in EUR, equivalent to the stated SEK prize amount, 10 days after the competition ends. Teams may choose payment in full to their captain or an equal split among the players in their active LAN lineup. Teams must inform the organiser of their chosen distribution before the payment date. |
 | Accommodation | Each finalist team receives three double rooms for five players and one coach for the Main Event. Accommodation is complimentary and booked by the organiser from January 29 to January 31, 2027. |
-| Other compensation: travel support | Each finalist team receives a travel stipend of SEK 5,000, paid as reimbursement after the event once travel documentation has been submitted. |
+| Other compensation: travel support | Each finalist team is reimbursed for actual travel costs up to SEK 5,000. Claims, including travel documentation, must be submitted no later than 15 days after the competition ends. Reimbursement is paid 30 days after the claim deadline. |
 
 Accommodation and travel support are separate from the SEK 30,000 prize pool. Finalist teams must arrive on January 29 for media obligations. Accommodation is booked through January 31.
 
