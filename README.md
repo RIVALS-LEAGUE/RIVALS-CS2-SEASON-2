@@ -31,8 +31,8 @@ This README covers **LEGENDS**. The registration window also applies to the **RI
 
 | Step | Date and time |
 | --- | --- |
-| Full rulebook scheduled for publication | October 1, 2026, at 12:00 CEST (UTC+2) |
-| Registration opens | October 8, 2026, at 12:00 CEST (UTC+2) |
+| Full rulebook scheduled for publication | October 2, 2026, at 12:00 CEST (UTC+2) |
+| Registration opens | October 9, 2026, at 12:00 CEST (UTC+2) |
 | Registration closes | October 21, 2026, at 23:59 CEST (UTC+2) |
 
 Register at **[rivalsleague.gg/register](https://rivalsleague.gg/register)** during this window.
@@ -140,12 +140,12 @@ Approved casters from the [RIVALS community caster programme](https://www.rivals
 
 The schedule below applies if the minimum of 16 teams is reached by the registration deadline. Otherwise, the tournament will be postponed.
 
-All times use **Europe/Stockholm**. The October 1, 8 and 21 times are CEST (UTC+2). Dates from October 26 through the January finals use CET (UTC+1).
+All times use **Europe/Stockholm**. The October 2, 9 and 21 times are CEST (UTC+2). Dates from October 26 through the January finals use CET (UTC+1).
 
 | Date | Activity | Status |
 | --- | --- | --- |
-| October 1, 2026, 12:00 | Full rulebook publication | Scheduled |
-| October 8, 2026, 12:00 | Registration opens | Confirmed date |
+| October 2, 2026, 12:00 | Full rulebook publication | Scheduled |
+| October 9, 2026, 12:00 | Registration opens | Confirmed date |
 | October 21, 2026, 23:59 | Registration closes | Confirmed deadline |
 | After registration closes, before groups are announced | Eligibility checks | Required before group announcement |
 | October 26, 2026 | Groups announced | Planned |
@@ -223,7 +223,7 @@ Accommodation and travel support are separate from the SEK 30,000 prize pool. Fi
 
 ## Rules, integrity and conduct
 
-The full rulebook, including integrity and conduct rules, is scheduled for publication on **October 1, 2026, at 12:00 CEST (UTC+2)**.
+The full rulebook, including integrity and conduct rules, is scheduled for publication on **October 2, 2026, at 12:00 CEST (UTC+2)**.
 
 ## Organiser and contact
 
@@ -232,6 +232,6 @@ The full rulebook, including integrity and conduct rules, is scheduled for publi
 - **Registered address:** c/o CESAR CATO, Välluvsvägen 5, 253 51 Påarp
 - **General tournament contact:** [RIVALS CS2 Discord server](https://discord.gg/rivalsleaguecs2)
 - **Tournament support:** [RIVALS CS2 Discord server](https://discord.gg/rivalsleaguecs2)
-- **Rules:** Pending October 1, 12:00 PM release.
+- **Rules:** Pending October 2, 2026, at 12:00 CEST (UTC+2).
 - **Registration:** [rivalsleague.gg/register](https://rivalsleague.gg/register)
 - **Tournament updates and broadcasts:** [rivalsleague.gg](https://rivalsleague.gg)
