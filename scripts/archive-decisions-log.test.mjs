@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { mkdir, mkdtemp, readFile, readdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { appealText, archive, assertFeed, describeChange, provision, renderLog, renderRegister } from './archive-decisions-log.mjs';
+import { RECORDS, appealText, archive, assertFeed, describeChange, pdfName, provision, renderChangelog, renderLog, renderRegister } from './archive-decisions-log.mjs';
 
 const SITE = 'https://site.test';
 const decision = (id, extra = {}) => ({
@@ -39,7 +39,7 @@ const registerFeed = (entries) => `${JSON.stringify({ page: `${SITE}/sanctions`,
 const fakeFetch = (bodies) => async (url) => {
   const body = bodies[new URL(url).pathname];
   const status = typeof body === 'number' ? body : body === undefined ? 404 : 200;
-  return { ok: status === 200, status, text: async () => body };
+  return { ok: status === 200, status, text: async () => body, arrayBuffer: async () => Buffer.from(body) };
 };
 const quiet = () => {};
 const run = (root, bodies) => archive({ root, site: SITE, fetchImpl: fakeFetch(bodies), log: quiet });
@@ -148,5 +148,85 @@ test('invalid JSON is a problem, not a crash', async () => {
 });
 
 test('describeChange names a first save', () => {
-  assert.equal(describeChange('Decisions Log', null, { entries: [] }), 'Decisions Log (first save)');
+  assert.equal(describeChange(RECORDS.log, null, { entries: [] }), 'Decisions Log (first save)');
+  assert.equal(describeChange(RECORDS.changelog, { entries: [{ version: '1.0' }] }, { entries: [{ version: '1.0' }, { version: '1.1' }] }), 'Changelog v1.1');
+});
+
+const CHANGELOG = '/data/cs2-s2-changelog.json';
+const version = (v, extra = {}) => ({
+  version: v,
+  kind: v === '1.0' ? 'publication' : 'change',
+  publishedAt: v === '1.0' ? '2026-10-02T12:00:00+02:00' : '2026-10-20T12:00:00+02:00',
+  appliesFrom: v === '1.0' ? '2026-10-02T12:00:00+02:00' : '2026-10-27T12:00:00+01:00',
+  clauses: v === '1.0' ? [] : ['6.4.4', '2.7:6'],
+  summary: { sv: v === '1.0' ? 'Regelboken publiceras.' : 'Ny väntetid.' },
+  pdf: { sv: `/rules/RIVALS-CS2-S2-Regelbok-v${v}-SV.pdf`, en: `/rules/RIVALS-CS2-S2-Rulebook-v${v}-EN.pdf` },
+  ...extra,
+});
+const changelogFeed = (entries) => `${JSON.stringify({ page: `${SITE}/cs2/rules/changelog`, entries }, null, 2)}
+`;
+const PDF = (tag) => `%PDF-1.7 ${tag}`;
+const withV10 = async (root) => {
+  await writeFile(path.join(root, pdfName('1.0', 'sv')), 'published v1.0 sv');
+  await writeFile(path.join(root, pdfName('1.0', 'en')), 'published v1.0 en');
+};
+
+test('the Changelog reads newest first, in Swedish, with links to the PDFs here', () => {
+  const md = renderChangelog(JSON.parse(changelogFeed([
+    version('1.0', { archived: { page: 'https://web.archive.org/web/2026/x', sv: 'javascript:alert(1)' } }),
+    version('1.1', { kind: 'exception', reasons: { sv: 'Krav från Valve.' }, exception: { basis: 'valve', tracks: ['legends'], valveApproval: '2026-10-19' } }),
+  ])), `${SITE}/cs2/rules/changelog`);
+  assert.ok(md.indexOf('## Version 1.1, Undantag') < md.indexOf('## Version 1.0, Publicering'));
+  for (const line of [
+    '- Publicerad: 2026-10-20 12:00:00 CEST',
+    '- Gäller från: 2026-10-27 12:00:00 CET',
+    '- Klausuler: 6.4.4, 2.7 grund 6',
+    '- Skäl: Krav från Valve.',
+    '- Grund: Valves turneringskrav. Spår: LEGENDS. Valves skriftliga godkännande 2026-10-19.',
+    '- Beslutat av: Ligakommissarien',
+    '- Regelbok: [RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf](../RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf), [RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf](../RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf)',
+    '- Arkiverad kopia: <https://web.archive.org/web/2026/x>',
+  ]) assert.ok(md.includes(line), line);
+  assert.ok(!md.includes('javascript:'), 'only https archive links are written');
+});
+
+test('a feed with PDF paths outside /rules/ is refused', () => {
+  assert.throws(() => assertFeed('changelog', { entries: [version('1.0', { pdf: { sv: '/rules/../x.pdf', en: '/rules/a-EN.pdf' } })] }), /unexpected response/);
+  assert.throws(() => assertFeed('changelog', { entries: [version('one')] }), /unexpected response/);
+});
+
+test('a new rulebook version gets its PDFs copied here, and 1.0 is left alone', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'changelog-'));
+  await withV10(root);
+  const bodies = {
+    [LOG]: logFeed([]), [REGISTER]: registerFeed([]), [CHANGELOG]: changelogFeed([version('1.0')]),
+  };
+  const first = await run(root, bodies);
+  assert.deepEqual(first.problems, []);
+  assert.equal(first.message, 'Archive Decisions Log (first save), Sanctions Register (first save) and Changelog (first save)');
+  const next = await run(root, {
+    ...bodies,
+    [CHANGELOG]: changelogFeed([version('1.0'), version('1.1')]),
+    '/rules/RIVALS-CS2-S2-Regelbok-v1.1-SV.pdf': PDF('sv'),
+    '/rules/RIVALS-CS2-S2-Rulebook-v1.1-EN.pdf': PDF('en'),
+  });
+  assert.deepEqual(next.problems, []);
+  assert.equal(next.message, 'Archive Changelog v1.1 and rulebook PDFs v1.1');
+  assert.equal(await readFile(path.join(root, 'RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf'), 'utf8'), PDF('sv'));
+  assert.equal(await readFile(path.join(root, 'RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf'), 'utf8'), PDF('en'));
+  assert.equal(await readFile(path.join(root, pdfName('1.0', 'sv')), 'utf8'), 'published v1.0 sv');
+});
+
+test('PDFs are never overwritten, and a page that is not a PDF is refused', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'changelog-'));
+  await withV10(root);
+  await writeFile(path.join(root, pdfName('1.1', 'sv')), 'already here');
+  const result = await run(root, {
+    [LOG]: logFeed([]), [REGISTER]: registerFeed([]), [CHANGELOG]: changelogFeed([version('1.0'), version('1.1')]),
+    '/rules/RIVALS-CS2-S2-Regelbok-v1.1-SV.pdf': PDF('new sv'),
+    '/rules/RIVALS-CS2-S2-Rulebook-v1.1-EN.pdf': '<html>not found</html>',
+  });
+  assert.equal(await readFile(path.join(root, pdfName('1.1', 'sv')), 'utf8'), 'already here');
+  assert.deepEqual(result.problems, [`Rulebook v1.1 (en): ${SITE}/rules/RIVALS-CS2-S2-Rulebook-v1.1-EN.pdf is not a PDF.`]);
+  assert.deepEqual((await readdir(root)).filter((f) => f.endsWith('.pdf')).sort(), [pdfName('1.0', 'en'), pdfName('1.0', 'sv'), pdfName('1.1', 'sv')].sort());
 });

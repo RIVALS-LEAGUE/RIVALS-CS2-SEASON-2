@@ -80,7 +80,11 @@ Slots go to teams in the order they complete registration. Until the groups are 
 
 Decisions on eligibility, disqualifications, withdrawals, standings, placings and sanctions are published in the Decisions Log at [rivalsleague.gg/cs2/decisions](https://rivalsleague.gg/cs2/decisions), on the day they are made. Suspensions, expulsions and bars after a withdrawal are listed in the league's Sanctions Register at [rivalsleague.gg/sanctions](https://rivalsleague.gg/sanctions).
 
-Under rule 1.3.2, every Decisions Log entry is also archived here the same day. A workflow saves both records whenever they change, in the `decisions-log` and `sanctions-register` folders: a JSON file exactly as the website published it and a Markdown file you can read here. The Swedish text applies. The commit history shows when each version was saved.
+Under rule 1.3.2, every Decisions Log entry is also archived here the same day. A workflow saves both records, and the rulebook Changelog, whenever they change, in the `decisions-log`, `sanctions-register` and `changelog` folders: a JSON file exactly as the website published it and a Markdown file you can read here. The Swedish text applies. The commit history shows when each version was saved.
+
+### Rulebook versions and Changelog
+
+Every version of the rulebook is listed with its date, time and changed clauses in the Changelog at [rivalsleague.gg/cs2/rules/changelog](https://rivalsleague.gg/cs2/rules/changelog) (rules 1.3.2 and 1.3.4). A change applies no earlier than 7 days after publication; Errata apply immediately. When a new version is published on the website, the same workflow copies both of its PDFs into this repository as `RIVALS-CS2-S2-REGELBOK-SV-v<version>.pdf` and `RIVALS-CS2-S2-RULEBOOK-EN-v<version>.pdf`, next to the earlier versions.
 
 ## Tournament format
 
