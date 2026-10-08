@@ -1,0 +1,66 @@
+name: Save registration order
+
+# Rule 2.1.2: the public registration order is saved on GitHub when the
+# registration window closes and when the Groups are published.
+# The window closes 21 October 2026, 23:59:59 CEST (21:59:59 UTC). Two runs
+# after that, because GitHub can delay or skip a scheduled run; the second one
+# finds the files already saved and does nothing.
+on:
+  schedule:
+    - cron: '15 22 21 10 *'
+    - cron: '45 23 21 10 *'
+  workflow_dispatch:
+    inputs:
+      moment:
+        description: Which moment to save
+        type: choice
+        options: [window-closed, groups-published]
+        required: true
+      track:
+        description: Which track
+        type: choice
+        options: [both, legends, rivals]
+        default: both
+
+permissions:
+  contents: write
+
+concurrency:
+  group: save-registration-order
+  cancel-in-progress: false
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.20.0
+      - name: Save the order from rivalsleague.gg
+        id: save
+        continue-on-error: true
+        env:
+          MOMENT: ${{ inputs.moment || 'window-closed' }}
+          TRACK: ${{ inputs.track || 'both' }}
+        run: node scripts/archive-registration-order.mjs --moment "$MOMENT" --track "$TRACK"
+      - name: Commit what was saved
+        env:
+          MOMENT: ${{ inputs.moment || 'window-closed' }}
+        run: |
+          git add registration-order
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          tracks=$(git diff --cached --name-only -- '*.json' | xargs -n1 basename | sed 's/\.json$//' | paste -sd, - | sed 's/,/, /g')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Save CS2 S2 registration order: $MOMENT ($tracks)"
+          git pull --rebase --quiet origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+      - name: Fail if a track could not be saved
+        if: steps.save.outcome == 'failure'
+        run: |
+          echo "At least one track was not saved. The log of the save step says why."
+          exit 1

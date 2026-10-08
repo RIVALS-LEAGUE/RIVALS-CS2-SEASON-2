@@ -72,6 +72,10 @@ By entering LEGENDS, teams commit to attending the January 29 media activities a
 | Substitutions | Teams may change their active lineup of five players on the server at any time between maps, using players registered on their roster. At least three of the five must be permanently resident in Sweden. The team-lock rule still applies. |
 | Eligibility checks | Checks take place after registration closes and before the groups are announced. |
 
+### Registration order
+
+Slots go to teams in the order they complete registration. Until the groups are published, [rivalsleague.gg/register](https://rivalsleague.gg/register) shows that order for each track, with every team's Registration Time to the second. The list for both tracks is saved in this repository, in the `registration-order` folder, when registration closes on October 21, 2026, at 23:59 CEST, and again when the groups are published. Each save has a table you can read here and a JSON file with the list exactly as the website returned it.
+
 ## Tournament format
 
 ### Qualifier Stage: 16 teams
