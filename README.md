@@ -4,12 +4,14 @@ Four places at LAN. SEK 30,000 on the line. RIVALS CS2 LEGENDS gives teams a cha
 
 The season is scheduled for **November 3, 2026, to January 30, 2027**, with the title decided at the RIVALS studio at GRO36 in Jönköping. Finalist teams must arrive on January 29 for media obligations. Entry is free. Every match is best of three (BO3), and every place at LAN must be earned.
 
-## Rulebooks v1.0
+## Rulebooks v1.1
 
-Published October 2, 2026.
+Published October 9, 2026. The stated effective time for the changes is October 16, 2026, at 12:00 CEST.
 
-- [English rulebook v1.0](RIVALS-CS2-S2-RULEBOOK-EN-v1.0.pdf)
-- [Svensk regelbok v1.0](RIVALS-CS2-S2-REGELBOK-SV-v1.0.pdf)
+[Changelog v1.1](ANDRINGSLOGG-v1.1.md). Previous version: [English v1.0](RIVALS-CS2-S2-RULEBOOK-EN-v1.0.pdf) / [Svenska v1.0](RIVALS-CS2-S2-REGELBOK-SV-v1.0.pdf).
+
+- [English rulebook v1.1](RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf)
+- [Svensk regelbok v1.1](RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf)
 
 ## Tournament overview
 
@@ -38,7 +40,7 @@ This README covers **LEGENDS**. The registration window also applies to the **RI
 
 | Step | Date and time |
 | --- | --- |
-| Rulebook v1.0 | Published October 2, 2026: [English](RIVALS-CS2-S2-RULEBOOK-EN-v1.0.pdf) / [Svenska](RIVALS-CS2-S2-REGELBOK-SV-v1.0.pdf) |
+| Rulebook v1.1 | Published October 9, 2026: [English](RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf) / [Svenska](RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf). Stated effective time: October 16, 2026, 12:00 CEST. |
 | Registration opens | October 9, 2026, at 12:00 CEST (UTC+2) |
 | Registration closes | October 21, 2026, at 23:59 CEST (UTC+2) |
 
@@ -84,7 +86,7 @@ Under rule 1.3.2, every Decisions Log entry is also archived here the same day. 
 
 ### Rulebook versions and Changelog
 
-Every version of the rulebook is listed with its date, time and changed clauses in the Changelog at [rivalsleague.gg/cs2/rules/changelog](https://rivalsleague.gg/cs2/rules/changelog) (rules 1.3.2 and 1.3.4). A change applies no earlier than 7 days after publication; Errata apply immediately. When a new version is published on the website, the same workflow copies both of its PDFs into this repository as `RIVALS-CS2-S2-REGELBOK-SV-v<version>.pdf` and `RIVALS-CS2-S2-RULEBOOK-EN-v<version>.pdf`, next to the earlier versions.
+Version 1.1 is published here with its [Changelog](ANDRINGSLOGG-v1.1.md). The [website Changelog](https://rivalsleague.gg/cs2/rules/changelog) is maintained separately. Rules 1.3.2 and 1.3.4 require version records with the date, time and changed clauses. A change applies no earlier than 7 days after publication; Errata apply immediately. When a new version is published on the website, the same workflow copies both of its PDFs into this repository as `RIVALS-CS2-S2-REGELBOK-SV-v<version>.pdf` and `RIVALS-CS2-S2-RULEBOOK-EN-v<version>.pdf`, next to the earlier versions.
 
 ## Tournament format
 
@@ -166,7 +168,9 @@ All times use **Europe/Stockholm**. The October 9 and 21 registration times are 
 | Date | Activity | Status |
 | --- | --- | --- |
 | October 2, 2026 | Rulebook v1.0 publication | Published |
+| October 9, 2026 | Rulebook v1.1 publication | Published |
 | October 9, 2026, 12:00 | Registration opens | Confirmed date |
+| October 16, 2026, 12:00 CEST | Stated effective time for v1.1 changes | See [Changelog v1.1](ANDRINGSLOGG-v1.1.md) |
 | October 21, 2026, 23:59 | Registration closes | Confirmed deadline |
 | After registration closes, before groups are announced | Eligibility checks | Required before group announcement |
 | October 26, 2026 | Groups announced | Planned |
@@ -244,7 +248,7 @@ Accommodation and travel support are separate from the SEK 30,000 prize pool. Fi
 
 ## Rules, integrity and conduct
 
-Rulebook **v1.0** was published on **October 2, 2026** and is available in [English](RIVALS-CS2-S2-RULEBOOK-EN-v1.0.pdf) and [Swedish](RIVALS-CS2-S2-REGELBOK-SV-v1.0.pdf).
+Rulebook **v1.1** was published on **October 9, 2026** and is available in [English](RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf) and [Swedish](RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf). The stated effective time for the changes is **October 16, 2026, at 12:00 CEST**. See the [Changelog v1.1](ANDRINGSLOGG-v1.1.md).
 
 ## Organiser and contact
 
@@ -253,6 +257,6 @@ Rulebook **v1.0** was published on **October 2, 2026** and is available in [Engl
 - **Registered address:** c/o CESAR CATO, Välluvsvägen 5, 253 51 Påarp
 - **General tournament contact:** [RIVALS CS2 Discord server](https://discord.gg/rivalsleaguecs2)
 - **Tournament support:** [RIVALS CS2 Discord server](https://discord.gg/rivalsleaguecs2)
-- **Rules:** [English v1.0](RIVALS-CS2-S2-RULEBOOK-EN-v1.0.pdf) / [Svenska v1.0](RIVALS-CS2-S2-REGELBOK-SV-v1.0.pdf).
+- **Rules:** [English v1.1](RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf) / [Svenska v1.1](RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf).
 - **Registration:** [rivalsleague.gg/register](https://rivalsleague.gg/register)
 - **Tournament updates and broadcasts:** [rivalsleague.gg](https://rivalsleague.gg)
