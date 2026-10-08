@@ -76,6 +76,12 @@ By entering LEGENDS, teams commit to attending the January 29 media activities a
 
 Slots go to teams in the order they complete registration. Until the groups are published, [rivalsleague.gg/register](https://rivalsleague.gg/register) shows that order for each track, with every team's Registration Time to the second. The list for both tracks is saved in this repository, in the `registration-order` folder, when registration closes on October 21, 2026, at 23:59 CEST, and again when the groups are published. Each save has a table you can read here and a JSON file with the list exactly as the website returned it.
 
+### Decisions Log and Sanctions Register
+
+Decisions on eligibility, disqualifications, withdrawals, standings, placings and sanctions are published in the Decisions Log at [rivalsleague.gg/cs2/decisions](https://rivalsleague.gg/cs2/decisions), on the day they are made. Suspensions, expulsions and bars after a withdrawal are listed in the league's Sanctions Register at [rivalsleague.gg/sanctions](https://rivalsleague.gg/sanctions).
+
+Under rule 1.3.2, every Decisions Log entry is also archived here the same day. A workflow saves both records whenever they change, in the `decisions-log` and `sanctions-register` folders: a JSON file exactly as the website published it and a Markdown file you can read here. The Swedish text applies. The commit history shows when each version was saved.
+
 ## Tournament format
 
 ### Qualifier Stage: 16 teams

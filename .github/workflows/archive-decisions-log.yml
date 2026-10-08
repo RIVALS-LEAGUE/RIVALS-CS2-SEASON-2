@@ -1,0 +1,56 @@
+name: Save Decisions Log and Sanctions Register
+
+# Rule 1.3.2: Decisions Log entries are archived on GitHub the same day.
+# rivalsleague.gg publishes the log and the Sanctions Register as JSON with
+# every deploy, and this saves them here whenever they change. It runs every
+# hour, plus at 23:50 Swedish time in both summer and winter time (21:50 and
+# 22:50 UTC), so an entry published late in the evening still lands the same
+# day. GitHub can delay a scheduled run, so after a late entry, run it by hand
+# (Actions, this workflow, Run workflow).
+on:
+  schedule:
+    - cron: '20 * * * *'
+    - cron: '50 21 * * *'
+    - cron: '50 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: save-decisions-log
+  cancel-in-progress: false
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.20.0
+      - name: Save both records from rivalsleague.gg
+        id: save
+        continue-on-error: true
+        run: node scripts/archive-decisions-log.mjs
+      - name: Commit what changed
+        env:
+          MESSAGE: ${{ steps.save.outputs.message }}
+        run: |
+          for dir in decisions-log sanctions-register; do
+            if [ -d "$dir" ]; then git add "$dir"; fi
+          done
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "${MESSAGE:-Archive Decisions Log and Sanctions Register}"
+          git pull --rebase --quiet origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+      - name: Fail if a record could not be saved
+        if: steps.save.outcome == 'failure'
+        run: |
+          echo "At least one record was not saved. The log of the save step says why."
+          exit 1
