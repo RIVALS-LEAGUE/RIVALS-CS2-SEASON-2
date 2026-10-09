@@ -1,0 +1,27 @@
+{
+  "title": {
+    "sv": "Ändringsloggen, RIVALS CS2 Säsong 2",
+    "en": "Changelog, RIVALS CS2 Season 2"
+  },
+  "page": "https://www.rivalsleague.gg/cs2/rules/changelog",
+  "entries": [
+    {
+      "version": "1.0",
+      "kind": "publication",
+      "publishedAt": "2026-10-02T12:00:00+02:00",
+      "appliesFrom": "2026-10-02T12:00:00+02:00",
+      "clauses": [],
+      "summary": {
+        "sv": "Regelboken publiceras.",
+        "en": "The Rulebook is published."
+      },
+      "pdf": {
+        "sv": "/rules/RIVALS-CS2-S2-Regelbok-v1.0-SV.pdf",
+        "en": "/rules/RIVALS-CS2-S2-Rulebook-v1.0-EN.pdf"
+      },
+      "archived": {
+        "page": "https://web.archive.org/web/20261002100538/https://www.rivalsleague.gg/cs2/rules"
+      }
+    }
+  ]
+}
