@@ -22,6 +22,29 @@
       "archived": {
         "page": "https://web.archive.org/web/20261002100538/https://www.rivalsleague.gg/cs2/rules"
       }
+    },
+    {
+      "version": "1.1",
+      "registrationUse": true,
+      "kind": "change",
+      "publishedAt": "2026-10-09T01:26:40+02:00",
+      "appliesFrom": "2026-10-16T12:00:00+02:00",
+      "clauses": [
+        "2.7:9",
+        "2.8.1",
+        "3.2.2",
+        "4.6.1",
+        "4.6.2",
+        "8.1.4"
+      ],
+      "summary": {
+        "sv": "Jävsdeklaration lämnas bara av den som är jävig eller har en Affärsrelation till Arrangören, en Funktionär eller ett annat Lag. Inget formulär eller separat bekräftelse krävs när det inte finns något att redovisa. Lagkaptenen redovisar Lagets organisation, och Vårdnadshavaren skriver under en deklaration som krävs för en Deltagare under 18 år. Grund 9 i 2.7 och kravet vid senare tillägg i 3.2.2 anpassas till detta. Fristen och 48-timmarsregeln för nya eller ändrade relationer är oförändrade.\n\nLAN-informationen anger inställelsetid och plats för innehållsproduktion den 29 januari 2027. Deltagarna ska vara på angiven plats senast vid inställelsetiden. Incheckningstiden och inställelsetiden är desamma för alla fyra Lag och ligger mellan kl. 12:00 och 18:00 CET.\n\nDeltagarna ska delta i de officiella medieaktiviteterna. Gränserna 48 timmar och 15 minuter per Deltagare och Matchvecka gäller förfrågningar om innehåll till sociala medier, inte mediadagen eller intervjuer efter Matchserien.",
+        "en": "A Conflict of Interest Declaration is required only from a Participant with a Conflict of Interest or Business Relationship with the Organiser, an Official or another Team. No form or separate confirmation is required where there is nothing to disclose. The Team Captain discloses such relationships of the Team's organisation, and the Guardian signs any required declaration for a Participant under 18. Ground 9 in 2.7 and the requirement for later additions in 3.2.2 are updated accordingly. The deadline and the 48-hour rule for new or changed relationships are unchanged.\n\nThe LAN Information states the call time and location for content creation on 29 January 2027. Participants must arrive at the stated location no later than the call time. The check-in time and the call time are the same for all four Teams and fall between 12:00 and 18:00 CET.\n\nParticipants must take part in the official media activities. The 48-hour and 15-minutes-per-Participant-and-Match-Week limits apply to social media content requests, not to the media day or post-Series interviews."
+      },
+      "pdf": {
+        "sv": "/rules/RIVALS-CS2-S2-Regelbok-v1.1-SV.pdf",
+        "en": "/rules/RIVALS-CS2-S2-Rulebook-v1.1-EN.pdf"
+      }
     }
   ]
 }
