@@ -5,16 +5,21 @@ name: Save registration order
 # The window closes 21 October 2026, 23:59:59 CEST (21:59:59 UTC). Two runs
 # after that, because GitHub can delay or skip a scheduled run; the second one
 # finds the files already saved and does nothing.
+# If the window is extended, it closes 28 October 2026, 23:59:59 CET
+# (22:59:59 UTC). The extended-window-closed runs after that save nothing
+# unless the website reports the later closing time.
 on:
   schedule:
     - cron: '15 22 21 10 *'
     - cron: '45 23 21 10 *'
+    - cron: '15 23 28 10 *'
+    - cron: '45 0 29 10 *'
   workflow_dispatch:
     inputs:
       moment:
         description: Which moment to save
         type: choice
-        options: [window-closed, groups-published]
+        options: [window-closed, extended-window-closed, groups-published]
         required: true
       track:
         description: Which track
@@ -41,12 +46,12 @@ jobs:
         id: save
         continue-on-error: true
         env:
-          MOMENT: ${{ inputs.moment || 'window-closed' }}
+          MOMENT: ${{ inputs.moment || (github.event.schedule == '15 23 28 10 *' || github.event.schedule == '45 0 29 10 *') && 'extended-window-closed' || 'window-closed' }}
           TRACK: ${{ inputs.track || 'both' }}
         run: node scripts/archive-registration-order.mjs --moment "$MOMENT" --track "$TRACK"
       - name: Commit what was saved
         env:
-          MOMENT: ${{ inputs.moment || 'window-closed' }}
+          MOMENT: ${{ inputs.moment || (github.event.schedule == '15 23 28 10 *' || github.event.schedule == '45 0 29 10 *') && 'extended-window-closed' || 'window-closed' }}
         run: |
           git add registration-order
           if git diff --cached --quiet; then

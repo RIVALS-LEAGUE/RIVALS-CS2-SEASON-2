@@ -31,6 +31,14 @@ const fakeFetch = (bodies) => async (url) => {
 };
 const quiet = () => {};
 
+test('extended-window-closed saves only a window the website reports as extended', () => {
+  const ordinary = { tournament: tournament('rivals-cs2-s2-legends') };
+  assert.match(notReadyReason('extended-window-closed', ordinary, new Date('2026-10-28T23:15:00Z')), /not extended/);
+  const extended = { tournament: tournament('rivals-cs2-s2-legends', { registration_closes_at: '2026-10-28T22:59:59+00:00' }) };
+  assert.match(notReadyReason('extended-window-closed', extended, new Date('2026-10-28T22:59:59Z')), /nothing to save yet/);
+  assert.equal(notReadyReason('extended-window-closed', extended, new Date('2026-10-28T23:00:00Z')), null);
+});
+
 test('window-closed waits until after 23:59:59 CEST on 21 October', () => {
   const o = order('rivals-cs2-s2-legends');
   assert.match(notReadyReason('window-closed', o, new Date(CLOSES)), /nothing to save yet/);
