@@ -44,6 +44,35 @@
           "en": "The postponement follows from 4.2.1 and is not a decision on Eligibility, Disqualification, placing or a Sanction (7.3.2). Its application in an individual case can be reviewed."
         }
       }
+    },
+    {
+      "id": 2,
+      "decidedAt": "2026-10-22T18:04:00+02:00",
+      "track": "rivals",
+      "category": "schedule",
+      "decidedBy": "commissioner",
+      "title": {
+        "sv": "RIVALS följer LEGENDS tidplan",
+        "en": "RIVALS follows the LEGENDS schedule"
+      },
+      "affected": {
+        "sv": "Alla Lag i RIVALS-spåret och Lag som registrerar sig där",
+        "en": "All Teams in the RIVALS track and Teams that register for it"
+      },
+      "provisions": [
+        "1.3.5"
+      ],
+      "reasons": {
+        "sv": "LEGENDS skjuts upp enligt 4.2.1 och spåren ska följa samma tidplan. RIVALS hade 2 fullständigt registrerade Lag när fönstret stängde. Regelboken anger inte hur RIVALS-spåret ska hanteras när LEGENDS skjuts upp, och beslutet utgår från 4.2.1 som närmaste regel. RIVALS-spåret har inget krav på 16 Lag, och 4.2.1 gäller inte där.",
+        "en": "LEGENDS is postponed under 4.2.1 and the tracks are to follow the same schedule. RIVALS had 2 completely registered Teams when the window closed. The rulebook does not say how the RIVALS track is handled when LEGENDS is postponed, and the decision is based on 4.2.1 as the closest rule. The RIVALS track has no 16-Team requirement, and 4.2.1 does not apply there."
+      },
+      "consequence": {
+        "sv": "Registreringsfönstret för RIVALS är öppet till onsdag 28 oktober 2026 kl. 23:59 CET. Fullständiga registreringar behåller sin Registreringstid och sin plats i ordningen, och inget Lag behöver registrera sig igen. Behörighetsbesked lämnas senast söndag 1 november 2026 kl. 18:00 CET. Seedning och Grupper, eller Play-in-möten, publiceras med spelschemat senast tisdag 3 november 2026 kl. 19:00 CET. Första ordinarie matchdag är tisdag 10 november 2026 kl. 19:00 CET, och Tävlingen startar då kl. 00:00 CET (2.7.3). Spåret genomförs om minst fyra Lag är behöriga och placerade när Behörighetskontrollen avslutas (5.2.3). Formatet, Prissumman och behörighetskraven är oförändrade.",
+        "en": "The RIVALS Registration Window is open until Wednesday 28 October 2026, 23:59 CET. Complete registrations keep their Registration Time and their place in the order, and no Team needs to register again. Eligibility notices are given by Sunday 1 November 2026, 18:00 CET. Seeding and Groups, or Play-in matchups, are published with the schedule by Tuesday 3 November 2026, 19:00 CET. The first regular matchday is Tuesday 10 November 2026, 19:00 CET, and the Competition starts at 00:00 CET that day (2.7.3). The track goes ahead if at least four Teams are eligible and placed when the Eligibility Check ends (5.2.3). The format, the Prize Pool and the eligibility requirements are unchanged."
+      },
+      "appeal": {
+        "to": "none"
+      }
     }
   ]
 }
