@@ -13,8 +13,12 @@ export const SITE = 'https://www.rivalsleague.gg';
 export const TRACKS = { legends: 'rivals-cs2-s2-legends', rivals: 'rivals-cs2-s2-rivals' };
 export const MOMENTS = {
   'window-closed': 'when the registration window closed',
+  'extended-window-closed': 'when the extended registration window closed',
   'groups-published': 'when the Groups were published',
 };
+// The published close (rule 2.1.1). window-closed keeps this record even
+// when the window is later extended: it is the count rule 4.2.1 reads.
+export const ORDINARY_CLOSE = '2026-10-21T21:59:59Z';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 export function sourceUrl(slug, site = SITE) {
@@ -33,6 +37,14 @@ export function notReadyReason(moment, order, now = new Date()) {
   const { tournament } = order;
   if (moment === 'window-closed' && !(now.getTime() > Date.parse(tournament.registration_closes_at))) {
     return `${tournament.slug}: registration closes ${tournament.registration_closes_at}, nothing to save yet.`;
+  }
+  if (moment === 'extended-window-closed') {
+    if (!(Date.parse(tournament.registration_closes_at) > Date.parse(ORDINARY_CLOSE))) {
+      return `${tournament.slug}: the window was not extended (closes ${tournament.registration_closes_at}), nothing to save.`;
+    }
+    if (!(now.getTime() > Date.parse(tournament.registration_closes_at))) {
+      return `${tournament.slug}: registration closes ${tournament.registration_closes_at}, nothing to save yet.`;
+    }
   }
   if (moment === 'groups-published' && !tournament.frozen_at) {
     return `${tournament.slug}: the order is not frozen. Freeze it in the registration admin tools when the Groups are published, then run this again.`;
