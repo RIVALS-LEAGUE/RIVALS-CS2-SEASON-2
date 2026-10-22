@@ -2,7 +2,7 @@
 
 Four places at LAN. SEK 30,000 on the line. RIVALS CS2 LEGENDS gives teams a chance to compete, build a name and earn their place in the finals through open online qualification.
 
-The season is scheduled for **November 3, 2026, to January 30, 2027**, with the title decided at the RIVALS studio at GRO36 in Jönköping. Finalist teams must arrive on January 29 for media obligations. Entry is free. Every match is best of three (BO3), and every place at LAN must be earned.
+The season is scheduled for **November 10, 2026, to January 30, 2027**, with the title decided at the RIVALS studio at GRO36 in Jönköping. Finalist teams must arrive on January 29 for media obligations. Entry is free. Every match is best of three (BO3), and every place at LAN must be earned.
 
 ## Rulebooks v1.1
 
@@ -21,7 +21,7 @@ Published October 9, 2026. The stated effective time for the changes is October 
 | Game | Counter-Strike 2 |
 | Tournament operator | Rivalerna E-sportförening |
 | Swedish organisation number | 802553-8599 |
-| Tournament dates, including mandatory attendance | November 3, 2026, to January 30, 2027, including the January 29 media day |
+| Tournament dates, including mandatory attendance | November 10, 2026, to January 30, 2027, including the January 29 media day |
 | Qualifier Stage | Online group stage, plus online quarterfinals if 17 to 32 teams enter |
 | Main Stage | Four-team LAN finals on January 30, 2027 |
 | Mandatory LAN attendance | January 29, 2027, for arrival and media obligations; January 30 for matches |
@@ -34,19 +34,22 @@ Published October 9, 2026. The stated effective time for the changes is October 
 | Intended Valve tournament category | Tier 2, with all places earned through open qualification |
 | VRS status and HLTV coverage | Not confirmed; the ambition concerns the Main Stage only |
 
-This README covers **LEGENDS**. The registration window also applies to the **RIVALS** track. Its format, eligibility, match dates and prizes are separate from the LEGENDS information below.
+This README covers **LEGENDS**. The extended registration window also applies to the **RIVALS** track, under its own decision. Its format, eligibility, match dates and prizes are separate from the LEGENDS information below.
 
 ## Registration and eligibility
+
+> **Schedule update.** When the registration window closed on October 21, 2026, at 23:59 CEST, 8 teams were completely registered in LEGENDS, fewer than 16. Under rule 4.2.1 LEGENDS is postponed, and the schedule on this page replaces the earlier one. Formats, prize pool and eligibility requirements are unchanged, and complete registrations keep their Registration Time and their place in the order. Decision: [rivalsleague.gg/cs2/decisions](https://www.rivalsleague.gg/cs2/decisions). Details: [rivalsleague.gg/news/rivals-cs2-sasong-2-ny-tidplan](https://www.rivalsleague.gg/news/rivals-cs2-sasong-2-ny-tidplan).
 
 | Step | Date and time |
 | --- | --- |
 | Rulebook v1.1 | Published October 9, 2026: [English](RIVALS-CS2-S2-RULEBOOK-EN-v1.1.pdf) / [Svenska](RIVALS-CS2-S2-REGELBOK-SV-v1.1.pdf). Stated effective time: October 16, 2026, 12:00 CEST. |
 | Registration opens | October 9, 2026, at 12:00 CEST (UTC+2) |
-| Registration closes | October 21, 2026, at 23:59 CEST (UTC+2) |
+| Registration closes | October 28, 2026, at 23:59 CET (UTC+1), extended under rule 4.2.1 |
+| Eligibility notices | By November 1, 2026, at 18:00 CET |
 
 Register at **[rivalsleague.gg/register](https://rivalsleague.gg/register)** during this window.
 
-Places are allocated **first come, first served**, with a maximum of **32 teams**. At least **16 teams must be registered by October 21, 2026, at 23:59 CEST**. If the minimum is not reached, the tournament will be postponed.
+Places are allocated **first come, first served**, with a maximum of **32 teams**. The minimum field of **16 teams** in rule 4.2 is unchanged.
 
 LEGENDS is open to teams that meet the published eligibility requirements, including teams without a VRS ranking. There are no direct invitations, wildcard invitations or places carried over from previous seasons.
 
@@ -58,7 +61,7 @@ By entering LEGENDS, teams commit to attending the January 29 media activities a
 
 | Detail | Rule |
 | --- | --- |
-| Minimum field | 16 teams by the registration deadline. If fewer than 16 teams register, the tournament will be postponed. |
+| Minimum field | 16 teams (rule 4.2, unchanged). |
 | Entry capacity | 32 teams. |
 | Entry allocation | First come, first served. Places are assigned through [rivalsleague.gg](https://rivalsleague.gg/register), subject to the published eligibility requirements. |
 | Withdrawals before competition starts | A team that withdraws before the competition starts is disqualified from the tournament. The two-season sanction does not apply to a pre-start withdrawal. |
@@ -76,7 +79,7 @@ By entering LEGENDS, teams commit to attending the January 29 media activities a
 
 ### Registration order
 
-Slots go to teams in the order they complete registration. Until the groups are published, [rivalsleague.gg/register](https://rivalsleague.gg/register) shows that order for each track, with every team's Registration Time to the second. The list for both tracks is saved in this repository, in the `registration-order` folder, when registration closes on October 21, 2026, at 23:59 CEST, and again when the groups are published. Each save has a table you can read here and a JSON file with the list exactly as the website returned it.
+Slots go to teams in the order they complete registration. Until the groups are published, [rivalsleague.gg/register](https://rivalsleague.gg/register) shows that order for each track, with every team's Registration Time to the second. The list for both tracks is saved in this repository, in the `registration-order` folder: `window-closed` holds the list at the ordinary close on October 21, 2026, at 23:59 CEST, the count rule 4.2.1 uses; `extended-window-closed` holds it when the extended window closes on October 28, 2026, at 23:59 CET; and it is saved again when the groups are published. Each save has a table you can read here and a JSON file with the list exactly as the website returned it.
 
 ### Decisions Log and Sanctions Register
 
@@ -161,9 +164,9 @@ Approved casters from the [RIVALS community caster programme](https://www.rivals
 
 ## Schedule
 
-The schedule below applies if the minimum of 16 teams is reached by the registration deadline. Otherwise, the tournament will be postponed.
+This is the schedule published under rule 4.2.1 after LEGENDS was postponed. The minimum field in rule 4.2 is unchanged.
 
-All times use **Europe/Stockholm**. The October 9 and 21 registration times are CEST (UTC+2). Dates from October 26 through the January finals use CET (UTC+1).
+All times use **Europe/Stockholm**. The October 9 opening is CEST (UTC+2). Everything from October 25, 2026, at 03:00 onwards is CET (UTC+1), including the October 28 close.
 
 | Date | Activity | Status |
 | --- | --- | --- |
@@ -171,26 +174,24 @@ All times use **Europe/Stockholm**. The October 9 and 21 registration times are 
 | October 9, 2026 | Rulebook v1.1 publication | Published |
 | October 9, 2026, 12:00 | Registration opens | Confirmed date |
 | October 16, 2026, 12:00 CEST | Stated effective time for v1.1 changes | See [Changelog v1.1](ANDRINGSLOGG-v1.1.md) |
-| October 21, 2026, 23:59 | Registration closes | Confirmed deadline |
-| After registration closes, before groups are announced | Eligibility checks | Required before group announcement |
-| October 26, 2026 | Groups announced | Planned |
-| October 28, 2026 | Group fixtures and captain information published | Planned |
-| November 3, 2026 | LEGENDS begins; group-stage round 1 | Confirmed start date |
-| November 10, 2026 | Group-stage round 2 | Planned |
-| November 17, 2026 | Group-stage round 3 | Planned |
-| November 24, 2026 | Group-stage round 4 | Planned |
-| December 1, 2026 | Group-stage round 5 | Planned |
-| December 8, 2026 | Group-stage round 6 | Planned |
-| December 15, 2026 | Group-stage round 7 | Planned |
+| October 28, 2026, 23:59 CET | Registration closes, extended under rule 4.2.1 | Deadline |
+| After registration closes, by November 1, 2026, 18:00 CET | Eligibility checks and notices | Deadline |
+| By November 3, 2026, 19:00 CET | Groups and group-stage schedule published | Deadline |
+| November 10, 2026, 19:00 CET | LEGENDS begins; first regular matchday | Start date |
+| November 17, 2026, 19:00 CET | Regular matchday | Scheduled |
+| November 24, 2026, 19:00 CET | Regular matchday | Scheduled |
+| December 1, 2026, 19:00 CET | Regular matchday | Scheduled |
+| December 8, 2026, 19:00 CET | Regular matchday | Scheduled |
+| December 15, 2026, 19:00 CET | Regular matchday | Scheduled |
 | December 16, 2026, to January 6, 2027 | Christmas break | No regular fixtures planned |
 | January 7 to 10, 2027 | Reserve dates for postponed group matches | Reserved |
-| January 10, 2027 | Group stage must be complete | Confirmed deadline |
+| January 10, 2027, 19:00 CET | Last regular matchday; the group stage normally ends at 23:59 CET, with the rulebook's existing exceptions | Deadline |
 | January 16, 2027, 13:00 and 16:00 CET | Two online quarterfinals | Applies if 17 to 32 teams enter |
 | January 17, 2027, 13:00 and 16:00 CET | Two online quarterfinals | Applies if 17 to 32 teams enter |
 | January 29, 2027 | Finalist arrival and media obligations | Mandatory attendance |
 | January 30, 2027 | LAN semifinals, third-place match and final | Confirmed date |
 
-The proposed regular group-stage match time is **Tuesdays at 19:00 CET**. Round dates after the opening matchday and exact start times will be confirmed in the fixture schedule. Rescheduling follows the published rulebook.
+Regular matchdays start at **19:00 CET**. The full fixture schedule is published with the groups by November 3, 2026, at 19:00 CET. Rescheduling follows the published rulebook.
 
 The calendar allows seven rounds for groups of eight. Teams in smaller groups play fewer matches, with byes where needed.
 
