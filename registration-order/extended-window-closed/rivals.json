@@ -1,0 +1,50 @@
+{
+  "moment": "extended-window-closed",
+  "saved_at": "2026-10-29T02:27:01.022Z",
+  "source": "https://www.rivalsleague.gg/api/registration/public-order?slug=rivals-cs2-s2-rivals",
+  "order": {
+    "tournament": {
+      "id": "9ca14293-a8e8-4749-9c20-6fbcccd7ac51",
+      "slug": "rivals-cs2-s2-rivals",
+      "name": "RIVALS LEAGUE Counter-Strike 2 Season 2: RIVALS",
+      "track": "rivals",
+      "slot_cap": 32,
+      "registration_opens_at": "2026-10-09T10:00:00+00:00",
+      "registration_closes_at": "2026-10-28T22:59:59+00:00",
+      "registration_state": "open",
+      "frozen_at": null
+    },
+    "free_slots": 31,
+    "counts": {
+      "slot": 1,
+      "waitlist": 0,
+      "withdrawn": 1
+    },
+    "teams": [
+      {
+        "order": 1,
+        "team_name": "Crazy Kittens Esport Titans",
+        "tri_code": "CKET",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/733a466f-9429-4ea9-8ef7-e0754de04b10?v=1791540092688",
+        "registered_at": "2026-10-13T11:47:00.380Z",
+        "registered_at_local": "2026-10-13 13:47:00 CEST",
+        "registered_at_utc": "2026-10-13 11:47:00 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": null,
+        "team_name": "Bansi Academy",
+        "tri_code": "BACA",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/ac263bb4-dc4e-473a-b2d3-d27173728bae?v=1791540687599",
+        "registered_at": "2026-10-17T13:54:47.575Z",
+        "registered_at_local": "2026-10-17 15:54:47 CEST",
+        "registered_at_utc": "2026-10-17 13:54:47 UTC",
+        "status": "withdrawn",
+        "waitlist_position": null,
+        "approved": false
+      }
+    ]
+  }
+}

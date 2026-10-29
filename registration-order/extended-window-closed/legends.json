@@ -1,0 +1,218 @@
+{
+  "moment": "extended-window-closed",
+  "saved_at": "2026-10-29T02:27:00.604Z",
+  "source": "https://www.rivalsleague.gg/api/registration/public-order?slug=rivals-cs2-s2-legends",
+  "order": {
+    "tournament": {
+      "id": "9a247a61-540d-4896-b1b0-0a7f26fcd46a",
+      "slug": "rivals-cs2-s2-legends",
+      "name": "RIVALS LEAGUE Counter-Strike 2 Season 2: LEGENDS",
+      "track": "legends",
+      "slot_cap": 32,
+      "registration_opens_at": "2026-10-09T10:00:00+00:00",
+      "registration_closes_at": "2026-10-28T22:59:59+00:00",
+      "registration_state": "open",
+      "frozen_at": null
+    },
+    "free_slots": 16,
+    "counts": {
+      "slot": 16,
+      "waitlist": 0,
+      "withdrawn": 0
+    },
+    "teams": [
+      {
+        "order": 1,
+        "team_name": "VanirQuick Academy",
+        "tri_code": "VQAC",
+        "logo_url": null,
+        "registered_at": "2026-10-09T14:18:43.878Z",
+        "registered_at_local": "2026-10-09 16:18:43 CEST",
+        "registered_at_utc": "2026-10-09 14:18:43 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 2,
+        "team_name": "GrillMix",
+        "tri_code": "GMI",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/47337adf-d742-45cd-a77f-e5103c09da7a?v=1791543684016",
+        "registered_at": "2026-10-11T00:10:22.209Z",
+        "registered_at_local": "2026-10-11 02:10:22 CEST",
+        "registered_at_utc": "2026-10-11 00:10:22 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 3,
+        "team_name": "Lazer Kittens",
+        "tri_code": "LZK",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/55446aa3-e130-4ec5-b5dd-5c9e32805d63?v=1791553128951",
+        "registered_at": "2026-10-11T19:15:25.824Z",
+        "registered_at_local": "2026-10-11 21:15:25 CEST",
+        "registered_at_utc": "2026-10-11 19:15:25 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      },
+      {
+        "order": 4,
+        "team_name": "Karolinerna",
+        "tri_code": "K5",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/a1d04355-0f7a-4795-903f-089bd32b37c4?v=1791540312702",
+        "registered_at": "2026-10-13T14:55:05.687Z",
+        "registered_at_local": "2026-10-13 16:55:05 CEST",
+        "registered_at_utc": "2026-10-13 14:55:05 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 5,
+        "team_name": "LEO CS2",
+        "tri_code": "LEO",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/7775e8f4-21dd-4cbe-a1b7-400267c4e8ea?v=1791544108342",
+        "registered_at": "2026-10-14T03:07:19.958Z",
+        "registered_at_local": "2026-10-14 05:07:19 CEST",
+        "registered_at_utc": "2026-10-14 03:07:19 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 6,
+        "team_name": "Northern Wolves Esport",
+        "tri_code": "NWE",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/92c76b29-e761-42a2-8e96-2b13d34147ac?v=1791540248879",
+        "registered_at": "2026-10-15T18:49:12.030Z",
+        "registered_at_local": "2026-10-15 20:49:12 CEST",
+        "registered_at_utc": "2026-10-15 18:49:12 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 7,
+        "team_name": "Spawn Point E-Sportförening",
+        "tri_code": "SP",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/bc13278f-8c32-4a88-8b07-726b3cb1f575?v=1791554748974",
+        "registered_at": "2026-10-16T14:05:59.522Z",
+        "registered_at_local": "2026-10-16 16:05:59 CEST",
+        "registered_at_utc": "2026-10-16 14:05:59 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 8,
+        "team_name": "JKPG Esports",
+        "tri_code": "JKPG",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/3d40cc22-321b-45c3-a6af-dbf3f520d216?v=1792573921208",
+        "registered_at": "2026-10-21T20:15:11.262Z",
+        "registered_at_local": "2026-10-21 22:15:11 CEST",
+        "registered_at_utc": "2026-10-21 20:15:11 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 9,
+        "team_name": "NEXT - Gaming",
+        "tri_code": "NXT",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/a32417e3-8c56-4ab9-8308-636aac4909ff?v=1792571272016",
+        "registered_at": "2026-10-25T11:16:22.281Z",
+        "registered_at_local": "2026-10-25 12:16:22 CET",
+        "registered_at_utc": "2026-10-25 11:16:22 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 10,
+        "team_name": "Boden Gaming",
+        "tri_code": "BGK",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/6107ff5d-fae2-45c0-802d-f9c3eb6610e0?v=1792953684727",
+        "registered_at": "2026-10-25T21:26:01.696Z",
+        "registered_at_local": "2026-10-25 22:26:01 CET",
+        "registered_at_utc": "2026-10-25 21:26:01 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 11,
+        "team_name": "Bansi Academy",
+        "tri_code": "BACA",
+        "logo_url": null,
+        "registered_at": "2026-10-27T15:22:38.733Z",
+        "registered_at_local": "2026-10-27 16:22:38 CET",
+        "registered_at_utc": "2026-10-27 15:22:38 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": true
+      },
+      {
+        "order": 12,
+        "team_name": "EYS Esports",
+        "tri_code": "EYS",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/a4c4d812-245b-49c9-ae93-e0383aed7b12?v=1793215494394",
+        "registered_at": "2026-10-28T20:26:06.145Z",
+        "registered_at_local": "2026-10-28 21:26:06 CET",
+        "registered_at_utc": "2026-10-28 20:26:06 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      },
+      {
+        "order": 13,
+        "team_name": "Västerås Esportförening",
+        "tri_code": "VEF",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/6e4a1a27-0d08-454f-a683-20530f969735?v=1793130609878",
+        "registered_at": "2026-10-28T20:30:23.927Z",
+        "registered_at_local": "2026-10-28 21:30:23 CET",
+        "registered_at_utc": "2026-10-28 20:30:23 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      },
+      {
+        "order": 14,
+        "team_name": "Izzotrades",
+        "tri_code": "IZZO",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/f450da3f-d578-467a-8a58-fc7281a10656?v=1793208369692",
+        "registered_at": "2026-10-28T20:40:37.797Z",
+        "registered_at_local": "2026-10-28 21:40:37 CET",
+        "registered_at_utc": "2026-10-28 20:40:37 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      },
+      {
+        "order": 15,
+        "team_name": "Lilmix",
+        "tri_code": "LIL",
+        "logo_url": "https://tntdmznrmxwxhzfaksjn.supabase.co/storage/v1/object/public/team-logos/363b678b-059a-40ae-8428-3ab829ea05f0?v=1793212945772",
+        "registered_at": "2026-10-28T21:43:19.451Z",
+        "registered_at_local": "2026-10-28 22:43:19 CET",
+        "registered_at_utc": "2026-10-28 21:43:19 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      },
+      {
+        "order": 16,
+        "team_name": "Pangsällskapet",
+        "tri_code": "PSK",
+        "logo_url": null,
+        "registered_at": "2026-10-28T22:14:28.513Z",
+        "registered_at_local": "2026-10-28 23:14:28 CET",
+        "registered_at_utc": "2026-10-28 22:14:28 UTC",
+        "status": "slot",
+        "waitlist_position": null,
+        "approved": false
+      }
+    ]
+  }
+}
